@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sign Up - Konnect Us</title>
+</head>
+<body>
+    <div class="navbar">
+        <img src="images/logo.png" alt="Logo" class="Mainlogo">
+        <div class="navText">Connecting you for you</div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="signInContainer">
+        <form action="" id="Sign1">
+            <h3>CREATE ACCOUNT</h3>
+            <input type="text" placeholder="Phone Number" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+
+            <div class="btn-box">
+                <button type="button">Login</button>
+                <button type="button" id="Next1">Next</button>
+            </div>
+        </form>
+
+        <form action="" id="Sign2">
+            <h3>DEMOGRPAHICS</h3>
+            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="CNIC" required>
+            <input type="date" placeholder="Date-Of-Birth" required>
+
+            <div class="btn-box">
+                <button type="button" id="back1">Back</button>
+                <button type="button" id="Next2">Next</button>
+            </div>
+        </form>
+
+        <form action="" id="Sign3">
+            <h3>DEMOGRPAHICS</h3>
+            <div class="Persongender">
+                <input type="radio" name="gender" id="mID"><label for="">Male</label>
+                <input type="radio" name="gender" id="fID"><label for="">Female</label>
+            </div>
+
+            <div class="Persontype">
+                <input type="radio" name="type" id="mP"><label for="">Patient</label>
+                <input type="radio" name="type" id="mD"><label for="">Doctor</label>
+            </div>
+            
+            <input type="textarea" placeholder="Address">
+
+            <div class="btn-box">
+                <button type="button" id="back2">Back</button>
+                <button type="Submit" >Sign Up</button>
+            </div>
+        </form>
+
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>Step 1</small></div>
+            <div class="step-col"><small>Step 2</small></div>
+            <div class="step-col"><small>Step 3</small></div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var Form1 = document.getElementById("Sign1");
+        var Form2 = document.getElementById("Sign2");
+        var Form3 = document.getElementById("Sign3");
+
+        var Next1 = document.getElementById("Next1");
+        var Next2 = document.getElementById("Next2");
+
+        var Back1 = document.getElementById("back1");
+        var Back2 = document.getElementById("back2");
+
+        var progress = document.getElementById("progress");
+
+        
+        Next1.onclick = function()
+        {
+            Form1.style.left = "-450px";
+            Form2.style.left = "40px";
+            progress.style.width = "240px";
+        }
+
+        Next2.onclick = function()
+        {
+            Form2.style.left = "-450px";
+            Form3.style.left = "40px";
+            progress.style.width = "360px";
+        }
+
+        Back1.onclick = function()
+        {
+            Form1.style.left = "40px";
+            Form2.style.left = "450px";
+            progress.style.width = "120px";
+        }
+
+        Back2.onclick = function()
+        {
+            Form2.style.left = "40px";
+            Form3.style.left = "450px";
+            progress.style.width = "240px";
+        }
+
+    </script>
+
+
+</body>
+</html>
