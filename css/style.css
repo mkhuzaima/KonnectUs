@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Satisfy&display=swap');
 
 /*                                      Navbar                                              */
 /* ________________________________________________________________________________________ */
@@ -48,8 +48,8 @@
 }
 
 .nav ul li{
-    width: 120px;
-    padding: 15px;
+    width: 170px;
+    padding: 12px;
 }
 
 .nav ul li a{
@@ -57,6 +57,8 @@
     color: #fff;
     display: flex;
     justify-content: center;
+    font-size: 17px;
+    font-family: sans-serif;
 }
 
 /* ________________________________________________________________________________________ */
@@ -304,5 +306,279 @@ body{
     justify-content: left;
     margin: 13px;
 }
+
+/* ________________________________________________________________________________________ */
+
+
+
+/*                                      Index                                              */
+
+
+
+/* ________________________________________________________________________________________ */
+
+
+
+
+
+/*                                      Patient Index                                              */
+
+.frontier{
+    background: rgba(0,0,0,0.7) url("../images/building.jpg");
+    background-size: cover;
+    height: 66vh;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.textLeft{
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.rightImage{
+    width: 30%;
+    /* background-color: red; */
+    height: 80%;
+    margin: 20px;
+}
+
+.aboveText p{
+    color: white;
+    margin: 20px;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    line-height: 91px;
+    font-weight: 700;
+    font-size: 90px;
+    text-shadow: 0px 0px 100px #110703, 1px 1px 10px #ccc;
+}
+
+.lowerText{
+    color: rgb(189, 189, 189);
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 43px;
+}
+
+.rightImage{
+    display: flex;
+    justify-content: left;
+}
+
+.rightImage img{
+    width: 75%;
+    height: 375px;
+}
+
+.advertisement{
+    padding: 30px;
+}
+
+.advertisement .AddTitle p{
+    font-size: 45px;
+    color: rgb(2, 63, 2);
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: 700;
+    padding-left: 30px;
+}
+
+.advertisement .boxes{
+    width: 100%; 
+    
+}
+
+.boxes .box{
+    display: flex;
+    flex-direction: row;
+}
+
+.box .sameBox{
+    /* border: 2px solid red; */
+    width: 50%;
+    margin: 30px;
+    height: 30vh;
+    border-radius: 12px;
+    box-shadow: 0px 0px 24px 1px rgba(218, 218, 218, 0.774);
+    display: flex;
+}
+
+.sameBox .leftPart{
+    width: 30%;
+    /* display: grid;
+    grid-template-rows: 1fr 6fr 4fr;
+    justify-content: center;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 27px;
+} 
+
+.sameBox .rightPart{
+    width: 60%;
+}
+
+.box-1 .leftPart{
+    background-color: #2A265F;
+    border-radius: 12px 0 0 12px;
+}
+
+.box-2 .leftPart{
+    background-color: #6dbe03;
+    border-radius: 12px 0 0 12px;
+}
+
+.leftPart .docType{
+    margin-top: -10px;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgba(245, 245, 245, 0.664);
+    font-weight: 500;
+}
+
+.leftPart .Name{
+    font-size: 35px;
+    width: 100%;
+    padding: 0;
+    color: white;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    margin: 16px 0;
+    line-height: 34px;
+    height: 145px;
+
+}
+
+.leftPart .clinic{
+    color: rgba(245, 245, 245, 0.664);
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.sameBox .rightPart{
+    display: grid;
+    grid-template-rows: 1fr 6fr 3fr;
+    width: 100%;
+    padding: 20px;
+} 
+
+.sameBox .rightPart .upperLine{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+}
+
+.upperLine .heading{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.685);
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.upperLine .value{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.685);
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.sameBox .rightPart .description{
+    margin: 30px 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 21px;
+    font-weight: 500;
+}
+
+.box-1 .rightPart .description{
+    color: #2A265F;
+}
+
+.box-2 .rightPart .description{
+    color: #7cdb00;
+}
+
+.sameBox .rightPart .button{
+    display: flex;
+    justify-content: right;
+}
+
+.sameBox .rightPart .button button{
+    width: 130px;
+    padding: 12px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.box-1 .rightPart .button button{
+    background-color: #2A265F;
+}
+
+.box-2 .rightPart .button button{
+    background-color: #7cdb00;
+}
+
+/* ________________________________________________________________________________________ */
+
+
+
+
+/*                                      footer                                              */
+
+footer{
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 16px;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+/* ________________________________________________________________________________________ */
+
+
+/*                                      Medical History                                              */
+
+.HistoryForm{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.HistoryForm .historyHeading{
+    color: #167a00;
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.HistoryForm form textarea{
+    resize: none;
+    width: 700px;
+    height: 40vh;
+    font-size: 18px;
+    padding: 20px;
+    font-family: sans-serif;
+    color: #333;
+    border-radius: 10px;
+    height: 70vh;
+}
+
 
 /* ________________________________________________________________________________________ */
