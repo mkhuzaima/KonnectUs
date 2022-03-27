@@ -1,0 +1,34 @@
+@media only screen and (max-width:1140px){
+
+    .nav ul{
+        flex: column;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 210px;
+    }
+
+    .nav ul li{
+        width: 85px;
+    }
+    .navbar .nav{
+        justify-content: center;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width:560px){
+    .nav ul li a{
+        font-size: 12px;
+    } 
+
+    .nav ul li{
+        width: 60px;
+    }
+}
