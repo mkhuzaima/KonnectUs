@@ -536,6 +536,7 @@ body{
 /*                                      footer                                              */
 
 footer{
+    width:100%;
     background-color: black;
     height: 10vh;
     display: flex;

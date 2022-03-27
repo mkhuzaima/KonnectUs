@@ -1,0 +1,70 @@
+@media only screen and (max-width:1140px){
+
+    .nav ul{
+        flex: column;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 210px;
+    }
+
+    .nav ul li{
+        width: 85px;
+    }
+    .navbar .nav{
+        justify-content: center;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width:560px){
+    .nav ul li a{
+        font-size: 12px;
+    } 
+
+    .nav ul li{
+        width: 60px;
+    }
+
+    .aboveText p{
+        font-size: 55px;
+        line-height: 55px;
+
+    }
+
+    .lowerText{
+        font-size: 29px;
+    }
+
+    .rightImage img {
+        width: 95%;
+    }
+
+    .contactBody .panel .left{
+        display: none;
+    }
+
+    .contactBody .panel .middle{
+        display: none;
+    }
+
+    .contactBody .panel .right .heading{
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+    }
+
+    .contactBody .panel{
+        display: flex;
+    }
+
+    .wrapper {
+        width: 343px;
+    }
+}

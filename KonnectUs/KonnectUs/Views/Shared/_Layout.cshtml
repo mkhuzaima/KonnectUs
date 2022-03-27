@@ -6,36 +6,42 @@
     <title>@ViewBag.Title - KonnectUs</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    @* Stylesheet linking for the styling of the structural HTML *@
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/responsive.css" rel="stylesheet" type="text/css">
+
+    @* Linking the Favourite Icon of the webpage*@
     <link rel="icon" href="~/icon.ico" />
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("KonnectUs", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
+    @* Creating the navbar for the website *@
+    <div class="navbar h-nav">
+        <img src="~/Content/images/logo.png" alt="Logo" class="Mainlogo">
+        <div class="navText">Connecting you for you</div>
+        <div class="nav">
+
+            @* List of the hyperlink in the navbar *@
+            <ul class="v-class navlist">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="login.html">Log In</a></li>
+            </ul>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
+
+        @* Footer for the website*@
         <footer>
-            <p>&copy; @DateTime.Now.Year - KonnectUs</p>
+            <p>Copyrights &copy; @DateTime.Now.Year - Syntax Terminator - All rights reserved</p>
         </footer>
     </div>
 
+    @* Scripts files for the rendering of the webpage *@
+    @Scripts.Render("~/Content/res.js")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
