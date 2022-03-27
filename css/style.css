@@ -9,7 +9,7 @@
 
 /*                                      Navbar                                              */
 
-
+/*#region*/
 .navbar{
     background: rgb(0,100,0);
     width: 100%;
@@ -60,12 +60,14 @@
     font-size: 17px;
     font-family: sans-serif;
 }
-
+/*#endregion*/
 /* ________________________________________________________________________________________ */
 
 
 
 /*                                      Login Page                                         */
+
+/*#region*/
 .login-body{
     display: grid;
     height: 86.5vh;
@@ -181,12 +183,14 @@
 .wrapper form .signup-link a:hover{
     text-decoration: underline;
 }
+
+/*#endregion*/
 /* ________________________________________________________________________________________________________________  */
 
 
 
 /*                                      Sign Up                                              */
-
+/*#region*/
 body{    
     background: #f2f2f2;
 
@@ -306,7 +310,7 @@ body{
     justify-content: left;
     margin: 13px;
 }
-
+/*#endregion*/
 /* ________________________________________________________________________________________ */
 
 
@@ -323,6 +327,7 @@ body{
 
 /*                                      Patient Index                                              */
 
+/*#region*/
 .frontier{
     background: rgba(0,0,0,0.7) url("../images/building.jpg");
     background-size: cover;
@@ -528,13 +533,15 @@ body{
     background-color: #7cdb00;
 }
 
+
+/*#endregion*/
 /* ________________________________________________________________________________________ */
 
 
 
 
 /*                                      footer                                              */
-
+/*#region*/
 footer{
     background-color: black;
     height: 10vh;
@@ -548,12 +555,12 @@ footer p{
     color: whitesmoke;
     font-family: sans-serif;
 }
-
+/*#endregion*/
 /* ________________________________________________________________________________________ */
 
 
 /*                                      Medical History                                              */
-
+/*#region*/
 .HistoryForm{
     padding: 20px;
     display: flex;
@@ -568,6 +575,12 @@ footer p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+.HistoryForm form{
+    display: flex;
+    flex-direction: column;
+}
+
 .HistoryForm form textarea{
     resize: none;
     width: 700px;
@@ -577,8 +590,460 @@ footer p{
     font-family: sans-serif;
     color: #333;
     border-radius: 10px;
-    height: 70vh;
+    height: 60vh;
 }
+
+.HistoryForm form button{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #167a00;
+    color: #fff;
+    font-size: 18px;
+}
+
+/*#endregion*/
+/* ________________________________________________________________________________________ */
+
+
+
+/*                                      Rating Doctor                                              */
+/*#region*/
+
+.HistoryForm form .feedbackArea{
+    resize: none;
+    width: 700px;
+    font-size: 18px;
+    padding: 20px;
+    font-family: sans-serif;
+    color: #333;
+    border-radius: 10px;
+    height: 24vh;
+}
+
+.HistoryForm form .slidecontainer input{
+    width: 100%; 
+    background-color: #2efa00;
+    margin: 20px 0;
+}
+
+.slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #008f2b;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+
+  .clinicBox{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 3fr 5fr 3fr;
+      margin: 20px 0;
+  }
+
+  .clinicBox label{
+      margin: auto;
+    color: #167a00;
+    font-size: 20px;
+  }
+
+  .clinicBox select{
+      background-color: transparent;
+      background: 4px solid #167a00;
+        padding: 8px;
+        font-size: 16px;
+        border-radius: 9px;
+  }
+
+.clinicBox select option{
+    color: #167a00;
+    font-size: 16px;
+}
+
+/*#endregion*/
+/* ________________________________________________________________________________________ */
+
+
+
+/*                                      filter doctor                                              */
+/*#region*/
+
+.filDocContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 2px solid black;
+}
+
+.FilterHeading{
+    color: #167a00;
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.filDocContainer .filterByExperience{
+    border-bottom: 1px solid rgb(112, 111, 111);
+    width: 100%;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    padding: 30px 0;
+}
+
+.filDocContainer .filterBySpecialization{
+    border-bottom: 1px solid rgb(112, 111, 111);
+    width: 100%;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 4fr  3fr 3fr;
+    padding: 30px 0;
+}
+
+.filterByExperience .sortType{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.sortType .sortHead{
+    color: #008f2b;
+    font-size: 19px;
+    font-family: sans-serif;
+    margin: 10px 20px;
+}
+
+.sortType select{
+    background: transparent;
+    color: #008f2b;
+    border: 2px solid #008f2b;
+    border-radius: 9px;
+    width: 55%;
+    font-size: 19px;
+}
+
+.filterByExperience .valueContainer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.valueContainer .sortHead{
+    color: #008f2b;
+    font-size: 19px;
+    font-family: sans-serif;
+    margin: 10px 20px;
+}
+
+
+.valueContainer .sortValue{
+    border: 2px solid #008f2b;
+    font-size: 17px;
+    color: #110703;
+    border-radius: 7px;
+    width: 60%;
+    background: transparent;
+    padding: 10px;
+}
+
+.filterByExperience .Confirmbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Confirmbutton button{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #008f2b;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.Confirmbutton button:hover{
+    background-color: #04a812;
+}
+
+.filterBySpecialization .sortHead{
+    color: #008f2b;
+    font-size: 19px;
+    font-family: sans-serif;
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterBySpecialization select{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border: 2px solid #008f2b;
+    border-radius: 7px;
+    background: transparent;
+    font-size: 16px;
+    padding: 10px;
+
+}
+
+/*#endregion*/
+/* ________________________________________________________________________________________ */
+
+
+
+/*                                      Doctor Details                                              */
+
+
+.DetailContainer{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.DetailContainer .generalContainer{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    padding: 5px;
+    
+    border-bottom: 1px solid grey;
+}
+
+
+.generalContainer .avatar{
+    width: 50%;
+    margin: auto;
+    border-radius: 50%;
+    border: 4px solid #008f2b;
+}
+
+
+.generalContainer .Details{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.generalContainer .Details .name{
+
+    color: #01581b;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 3px;
+
+}
+
+.generalContainer .Details .gender{
+    color: #110703;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 3px;
+}
+
+.generalContainer .Details .specialization{
+    color: #110703;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 3px;
+}
+
+.clinicContainer{
+    background: rgba(0,0,0,0.7) url("../images/clock1.jpg");
+    height: 70vh;
+    
+    background-blend-mode: darken;
+    width: 100%;
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.clinicContainer .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.clinicContainer .left h1{
+    color: #2ec400;
+    font-size: 60px;
+    line-height: 61px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+}
+
+.clinicContainer .left p{
+    color: #04a50c;
+    font-size: 18px;
+    font-family:sans-serif;
+}
+
+.clinicContainer .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.clinicContainer .right .p1{
+    color: #02960c;
+    font-size: 24px;
+    font-family:sans-serif;
+}
+
+.clinicContainer .right .p2{
+    color: #da0000;
+    font-size: 20px;
+    font-family:sans-serif;
+}
+
+.analysisContainer{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    width: 100%;
+}
+
+.analysisContainer .experienceContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.analysisContainer .experienceContainer .experience{
+    border: 7px solid #008f2b;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.analysisContainer .experienceContainer .experience:hover{
+    border: 7px solid #0de406;
+}
+
+.analysisContainer .experienceContainer .experience p{
+    font-size: 33px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #034400;
+}
+
+.analysisContainer .experienceContainer .heading{
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #110703;
+}
+
+
+.analysisContainer .ratingContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+.analysisContainer .ratingContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.analysisContainer .ratingContainer .experience{
+    background-color: #008f2b;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.analysisContainer .ratingContainer .experience:hover{
+    background-color: transparent;
+    color: #01581b;
+    border: 7px solid #01581b;
+}
+
+.analysisContainer .ratingContainer .experience p{
+    font-size: 33px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #1e1f1e;
+}
+
+
+
+.analysisContainer .ratingContainer .heading{
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #110703;
+}
+
+
+
+
 
 
 /* ________________________________________________________________________________________ */

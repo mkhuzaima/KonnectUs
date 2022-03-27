@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Doctor Feedback - Konnect Us</title>
+</head>
+<body>
+    
+    <div class="navbar">
+        <img src="images/logo.png" alt="Logo" class="Mainlogo">
+        <div class="navText">Connecting you for you</div>
+        <div class="nav">
+            <ul>
+                <li><a href="PatientHome.html">Home</a></li>
+                <li><a href="MedicalHistory.html">Medical History</a></li>
+                <li><a href="#">Give Feedback</a></li>
+                <li><a href="FilterDoctor.html">Filter Doctor</a></li>
+                <li><a href="#">Logout </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="HistoryForm">
+
+        <h1 class="historyHeading">Provide Feedback</h1>
+
+        <form action="">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="5" value="1" class="slider" id="myRange">
+            </div>
+            
+            <div class="clinicBox">
+                <label for="cars">Clinic Visited</label>
+
+                <select name="cars" id="cars">
+                    <option value="volvo">Shalamar Hospital</option>
+                    <option value="saab">Sadaat Clinic</option>
+                    <option value="mercedes">Al Ehsaan Eye Hospital</option>
+                    <option value="audi">Mughal Eyes Optical</option>
+                </select>
+            </div>
+
+            <textarea name="" id="feedbackArea" class="feedbackArea" cols="30" rows="10" placeholder="Enter Feedback Here"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+
+    <footer>
+        <p>Copyrights &copy; 2022 Syntax Terminators - All rights reserved</p>
+    </footer>
+
+
+</body>
+</html>
