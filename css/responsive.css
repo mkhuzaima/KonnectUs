@@ -31,4 +31,40 @@
     .nav ul li{
         width: 60px;
     }
+
+    .aboveText p{
+        font-size: 55px;
+        line-height: 55px;
+
+    }
+
+    .lowerText{
+        font-size: 29px;
+    }
+
+    .rightImage img {
+        width: 95%;
+    }
+
+    .contactBody .panel .left{
+        display: none;
+    }
+
+    .contactBody .panel .middle{
+        display: none;
+    }
+
+    .contactBody .panel .right .heading{
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+    }
+
+    .contactBody .panel{
+        display: flex;
+    }
+
+    .wrapper {
+        width: 343px;
+    }
 }
