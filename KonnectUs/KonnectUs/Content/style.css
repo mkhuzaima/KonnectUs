@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Satisfy&display=swap');
+
+/*                                      Navbar                                              */
+/* ________________________________________________________________________________________ */
+
+
+
+
+/*                                      Navbar                                              */
+
+
+.navbar{
+    background: rgb(0,100,0);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 6fr 1fr;
+    /* margin-top: -76px; */
+}
+
+.navbar .navText{
+    font-size: 25px;
+    margin: auto;
+    color: #fff;
+    font-family: 'Satisfy', cursive;
+    color: #46df239d;
+}
+
+.navbar .Mainlogo{
+    width: 59px;
+    margin: auto;
+}
+
+.navbar .nav{
+    display: flex;
+    justify-content: right;
+}
+
+.navbar .nav ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.nav ul li:hover{
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+.nav ul li{
+    width: 170px;
+    padding: 12px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+/* ________________________________________________________________________________________ */
+
+
+
+/*                                      Login Page                                         */
+.login-body{
+    display: grid;
+    height: 86.5vh;
+    place-items: center;
+    background: #f2f2f2;
+}
+
+.wrapper{
+    width: 380px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+
+.wrapper .login-title{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+    line-height: 100px;
+    background: linear-gradient(-135deg, #2193b0, #6dd5ed);
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper form{
+    padding: 10px 30px 50px 30px;
+}
+
+.wrapper form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.wrapper form .field input{
+    height: 100%;
+    width: 92%;
+    padding-left: 20px;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 17px;
+}
+
+.wrapper form .field input:focus,
+.wrapper form .field input:valid{
+    border-color: #4158d0;
+}
+
+.wrapper form .field label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    top: 10px;
+    transform: translateY(50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-size: 17px;
+    color: #999;
+}
+
+.wrapper form .field input:focus ~ label,
+.wrapper form .field input:valid ~ label{
+    top: 0%;
+    color: #4158d0;
+    font-size: 16px;
+    transform: translateY(-50%);
+    background: #fff;
+}
+
+.wrapper form .pass-link{
+    color: #4158d0;
+    margin: 10px 0 0 10px;
+}
+
+.wrapper form .field input[type="submit"]{
+    color: #fff;
+    background: linear-gradient(-135deg, #2193b0, #6dd5ed);
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    padding-left: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wrapper form .field input[type="submit"]:active{
+    transform: scale(0.95);
+}
+
+.wrapper form .pass-link{
+    color: #4158d0;
+    margin: 10px 0 0 10px;
+}
+
+.wrapper form .signup-link{
+    
+    text-align: center;
+    margin-top: 20px;
+    color: #262626;
+}
+
+.wrapper form .pass-link a,
+.wrapper form .signup-link a{
+    color: #7a7a7a;
+    text-decoration: none;
+}
+
+.wrapper form .pass-link a:hover,
+.wrapper form .signup-link a:hover{
+    text-decoration: underline;
+}
+/* ________________________________________________________________________________________________________________  */
+
+
+
+/*                                      Sign Up                                              */
+
+body{    
+    background: #f2f2f2;
+
+}
+
+.signInContainer{
+    width: 360px;
+    height: 400px;
+    margin: 8% auto;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 0px 21px -7px rgb(112, 111, 111);
+    overflow: hidden;
+}
+
+.signInContainer h3{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.signInContainer form{
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    transition: 0.5s;
+}
+
+.signInContainer form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+::placeholder{
+    color: #777;
+}
+
+
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.signInContainer form button{
+    width: 110px;height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(#46df23ab, #2bab0d);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#Sign2{
+    left: 450px;
+}
+
+#Sign3{
+    left: 450px;
+}
+
+.step-row{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px rgba(0, 0, 0, 0.452);
+    position: relative;
+}
+
+.step-col{
+    width: 120px;
+    text-align: center;
+    color: #333;
+    position: relative;
+
+}
+
+.step-row #progress{
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background: linear-gradient(to left,#46df23ab, #2bab0d);
+    transition: 1s;
+}
+
+.step-row #progress::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid #46df23ab;
+}
+
+.Persongender{
+    display: flex;
+    justify-content: left;
+    margin: 13px;
+}
+
+.Persontype{
+    display: flex;
+    justify-content: left;
+    margin: 13px;
+}
+
+/* ________________________________________________________________________________________ */
+
+
+
+/*                                      Index                                              */
+
+
+
+/* ________________________________________________________________________________________ */
+
+
+
+
+
+/*                                      Patient Index                                              */
+
+.frontier{
+    background: rgba(0,0,0,0.7) url("../images/building.jpg");
+    background-size: cover;
+    height: 66vh;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.textLeft{
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.rightImage{
+    width: 30%;
+    /* background-color: red; */
+    height: 80%;
+    margin: 20px;
+}
+
+.aboveText p{
+    color: white;
+    margin: 20px;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    line-height: 91px;
+    font-weight: 700;
+    font-size: 90px;
+    text-shadow: 0px 0px 100px #110703, 1px 1px 10px #ccc;
+}
+
+.lowerText{
+    color: rgb(189, 189, 189);
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 43px;
+}
+
+.rightImage{
+    display: flex;
+    justify-content: left;
+}
+
+.rightImage img{
+    width: 75%;
+    height: 375px;
+}
+
+.advertisement{
+    padding: 30px;
+}
+
+.advertisement .AddTitle p{
+    font-size: 45px;
+    color: rgb(2, 63, 2);
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: 700;
+    padding-left: 30px;
+}
+
+.advertisement .boxes{
+    width: 100%; 
+    
+}
+
+.boxes .box{
+    display: flex;
+    flex-direction: row;
+}
+
+.box .sameBox{
+    /* border: 2px solid red; */
+    width: 50%;
+    margin: 30px;
+    height: 30vh;
+    border-radius: 12px;
+    box-shadow: 0px 0px 24px 1px rgba(218, 218, 218, 0.774);
+    display: flex;
+}
+
+.sameBox .leftPart{
+    width: 30%;
+    /* display: grid;
+    grid-template-rows: 1fr 6fr 4fr;
+    justify-content: center;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 27px;
+} 
+
+.sameBox .rightPart{
+    width: 60%;
+}
+
+.box-1 .leftPart{
+    background-color: #2A265F;
+    border-radius: 12px 0 0 12px;
+}
+
+.box-2 .leftPart{
+    background-color: #6dbe03;
+    border-radius: 12px 0 0 12px;
+}
+
+.leftPart .docType{
+    margin-top: -10px;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgba(245, 245, 245, 0.664);
+    font-weight: 500;
+}
+
+.leftPart .Name{
+    font-size: 35px;
+    width: 100%;
+    padding: 0;
+    color: white;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    margin: 16px 0;
+    line-height: 34px;
+    height: 145px;
+
+}
+
+.leftPart .clinic{
+    color: rgba(245, 245, 245, 0.664);
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.sameBox .rightPart{
+    display: grid;
+    grid-template-rows: 1fr 6fr 3fr;
+    width: 100%;
+    padding: 20px;
+} 
+
+.sameBox .rightPart .upperLine{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+}
+
+.upperLine .heading{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.685);
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.upperLine .value{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.685);
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.sameBox .rightPart .description{
+    margin: 30px 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 21px;
+    font-weight: 500;
+}
+
+.box-1 .rightPart .description{
+    color: #2A265F;
+}
+
+.box-2 .rightPart .description{
+    color: #7cdb00;
+}
+
+.sameBox .rightPart .button{
+    display: flex;
+    justify-content: right;
+}
+
+.sameBox .rightPart .button button{
+    width: 130px;
+    padding: 12px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.box-1 .rightPart .button button{
+    background-color: #2A265F;
+}
+
+.box-2 .rightPart .button button{
+    background-color: #7cdb00;
+}
+
+/* ________________________________________________________________________________________ */
+
+
+
+
+/*                                      footer                                              */
+
+footer{
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 16px;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+/* ________________________________________________________________________________________ */
+
+
+/*                                      Medical History                                              */
+
+.HistoryForm{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.HistoryForm .historyHeading{
+    color: #167a00;
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.HistoryForm form textarea{
+    resize: none;
+    width: 700px;
+    height: 40vh;
+    font-size: 18px;
+    padding: 20px;
+    font-family: sans-serif;
+    color: #333;
+    border-radius: 10px;
+    height: 70vh;
+}
+
+
+/* ________________________________________________________________________________________ */

@@ -14,5 +14,9 @@ namespace KonnectUs.Models
         public float rating { get; set; }
 
 
+        // optional
+        public string tagLine { get; set; }
+
+
     }
 }
