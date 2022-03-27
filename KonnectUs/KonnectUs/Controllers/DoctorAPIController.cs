@@ -31,10 +31,22 @@ namespace KonnectUs.Controllers
         [HttpGet]
         public List<Doctor> GetDoctors()
         {
+            Random random = new Random();
+
             List<Doctor> doctors = new List<Doctor>();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 9; i++)
             {
-                doctors.Add(new Doctor());
+                Doctor doctor = new Doctor();
+
+                doctor.name = "Name " +(i+1);
+                doctor.rating = (float)Math.Round(random.NextDouble() * 4 + 1, 1);
+
+                if (String.IsNullOrEmpty(doctor.tagLine))
+                {
+                    doctor.tagLine = "If you want to see more details about me, then please click on \"Show More\"";
+                }
+
+                doctors.Add(doctor);
             }
             return doctors;
         }
