@@ -1,20 +1,7 @@
 ﻿
-<link rel="stylesheet" href="../Content/style.css">
-<link rel="stylesheet" href="../Content/responsive.css">
-<title>Sign Up - Konnect Us</title>
-
-<div class="navbar h-nav">
-    <img src="images/logo.png" alt="Logo" class="Mainlogo">
-    <div class="navText">Connecting you for you</div>
-    <div class="nav">
-        <ul class="v-class navlist">
-            <li><a href="Index.html">Home</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="help.html">Help</a></li>
-            <li><a href="login.html">Log In</a></li>
-        </ul>
-    </div>
-</div>
+@{
+    ViewBag.Title = "Sign Up - Konnect Us";
+}
 
 <div class="signInContainer">
     <form action="" id="Sign1">
@@ -24,7 +11,7 @@
         <input type="password" placeholder="Confirm Password" required>
 
         <div class="btn-box">
-            <button type="button">Login</button>
+            <button type="button" id="loginBtn">Login</button>
             <button type="button" id="Next1">Next</button>
         </div>
     </form>
@@ -57,7 +44,7 @@
 
         <div class="btn-box">
             <button type="button" id="back2">Back</button>
-            <button type="Submit"  id="registerbtn">Sign Up</button>
+            <button type="Submit" id="registerbtn">Sign Up</button>
         </div>
     </form>
 
@@ -72,9 +59,11 @@
 
 
 
-@Scripts{
+@section scripts{
 
     <script>
+
+
         var Form1 = document.getElementById("Sign1");
         var Form2 = document.getElementById("Sign2");
         var Form3 = document.getElementById("Sign3");
@@ -113,6 +102,10 @@
             progress.style.width = "240px";
         }
 
+        document.getElementById('loginBtn').onclick = function () {
+            window.location.href = '@Url.Action("Login", "Account")';
+        }
+
 
         registerbtn.onclick = register();
 
@@ -122,7 +115,7 @@
     <script>
         url = ""
         function register() {
-            var name = 
+            var name =
         }
 
         var obj = {

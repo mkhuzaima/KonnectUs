@@ -47,10 +47,15 @@ namespace KonnectUs.Controllers
         }
 
 
-        [HttpGet]
-        public int Login(string number, string password)
+        [HttpPost]
+        public IHttpActionResult Login([FromBody] Credentials obj)
         {
-            string query = $"select id from Person where phoneNumber ='{number}' and password = '{password}'";
+
+            if (obj == null)
+            {
+                return NotFound();
+            }
+            string query = $"select id from Person where phoneNumber ='{obj.number}' and password = '{obj.password}'";
             var con = KonnectUs.Configuration.getInstance().getConnection();
             while (true)
             {
@@ -62,13 +67,14 @@ namespace KonnectUs.Controllers
                     if (reader.HasRows)
                     {
                         reader.Read();
-                        return reader.GetInt32(0);
-                        reader.Close();
+                        int id = reader.GetInt32(0);
+                        return Ok(content: new { id });
+                        //reader.Close();
                     }
                     else
                     {
-                        return -1;
-                        reader.Close();
+                        return NotFound();
+                        //reader.Close();
                     }
                 }
                 catch (Exception ex)

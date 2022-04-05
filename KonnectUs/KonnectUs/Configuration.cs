@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace KonnectUs
 {
-    class Configuration
+    public class Configuration
     {
+        const string BASE_URL = "http://localhost:60677/";
         String ConnectionStr = @"Data Source=(local);Initial Catalog=KonnectUs;Integrated Security=True";
         SqlConnection con;
         private static Configuration _instance;
@@ -27,6 +28,11 @@ namespace KonnectUs
         public SqlConnection getConnection()
         {
             return con;
+        }
+
+        public string getBaseUrl()
+        {
+            return BASE_URL;
         }
     }
 }

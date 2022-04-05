@@ -6,10 +6,14 @@ using System.Web.Mvc;
 
 namespace KonnectUs.Controllers
 {
-    public class SignupController : Controller
+    public class AccountController : Controller
     {
         // GET: Signup
-        public ActionResult Index()
+        public ActionResult Signup()
+        {
+            return View();
+        }
+        public ActionResult Login()
         {
             return View();
         }

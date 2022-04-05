@@ -145,13 +145,14 @@
     <Compile Include="Controllers\DoctorAPIController.cs" />
     <Compile Include="Controllers\DoctorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\SignupController.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModel.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Clinic.cs" />
+    <Compile Include="Models\Credentials.cs" />
     <Compile Include="Models\Detail.cs" />
     <Compile Include="Models\Disease.cs" />
     <Compile Include="Models\Doctor.cs" />
@@ -209,7 +210,9 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Doctor\ListDoctors.cshtml" />
-    <Content Include="Views\Signup\Index.cshtml" />
+    <Content Include="Views\Home\Help.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Signup.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

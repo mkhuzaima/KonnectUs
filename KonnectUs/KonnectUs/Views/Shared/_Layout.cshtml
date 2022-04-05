@@ -23,16 +23,15 @@
 
             @* List of the hyperlink in the navbar *@
             <ul class="v-class navlist">
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="help.html">Help</a></li>
-                <li><a href="login.html">Log In</a></li>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                <li>@Html.ActionLink("Help", "Help", "Home")</li>
+                <li>@Html.ActionLink("Login", "Login", "Account")</li>
             </ul>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
 
         @* Footer for the website*@
         <footer>
